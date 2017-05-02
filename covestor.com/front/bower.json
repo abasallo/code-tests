@@ -1,0 +1,12 @@
+{
+    "name": "covestor-code-test-front",
+    "version": "1.0",
+    "authors": [
+        "Álvaro Basallo <alvaro@basallo.es>"
+    ],
+    "private": true,
+    "dependencies": {
+        "jquery": "*",
+        "bootstrap": "*"
+    }
+}

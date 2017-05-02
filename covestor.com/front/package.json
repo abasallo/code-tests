@@ -1,0 +1,16 @@
+{
+    "name": "covestor-code-test-front",
+    "version": "1.0.0",
+    "dependencies": {
+        "bower": "*"
+    },
+    "devDependencies": {
+        "coffee-script": "*",
+        "gulp": "*",
+        "gulp-coffee": "*",
+        "del": "*",
+        "karma-jasmine": "*",
+        "karma-phantomjs-launcher": "*",
+        "karma-chrome-launcher": "*"
+    }
+}
