@@ -1,0 +1,14 @@
+<div>
+
+  <md-list>
+    <md-list-item *ngFor='let dashboard of dashboards.list'
+                  (click)='dashboards.selected = dashboard'
+                  [ngClass]="{'selected': dashboards.selected === dashboard}"
+                  id="dashboard-list-item">
+      {{ dashboard.name }}
+    </md-list-item>
+  </md-list>
+
+  <button md-mini-fab (click)="openDialog()" id="dashboard-add-button"><md-icon>add</md-icon></button>
+
+</div>

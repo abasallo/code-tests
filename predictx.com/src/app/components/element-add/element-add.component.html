@@ -1,0 +1,30 @@
+<h2 md-dialog-title>New Element</h2>
+
+<md-dialog-content>
+
+  <md-input-container class="full-width">
+    <input mdInput placeholder="Name" #name id="element-add-dialog-name">
+  </md-input-container>
+
+  <md-input-container>
+    <input mdInput placeholder="Columns Span" #colSpan value="1">
+  </md-input-container>
+
+  <md-input-container>
+    <input mdInput placeholder="Row Span" #rowSpan value="1">
+  </md-input-container>
+
+  <md-input-container class="full-width">
+    <textarea rows="5" mdInput placeholder="Element's JSON" #json>{{ sampleJSON }}</textarea>
+  </md-input-container>
+
+</md-dialog-content>
+
+<md-dialog-actions>
+    <button md-button md-dialog-close>Cancel</button>
+    <button md-button md-dialog-close
+            (click)="createElement(name.value, json.value, colSpan.value, rowSpan.value)"
+            id="element-add-dialog-button-ok">
+      Ok
+    </button>
+</md-dialog-actions>

@@ -1,0 +1,22 @@
+<h2 md-dialog-title>New Dashboard</h2>
+
+<md-dialog-content>
+
+  <md-input-container>
+    <input mdInput placeholder="Name" #name id="dashboard-add-dialog-name">
+  </md-input-container>
+
+  <md-input-container>
+    <input mdInput placeholder="Columns" #columns id="dashboard-add-dialog-columns">
+  </md-input-container>
+
+</md-dialog-content>
+
+<md-dialog-actions>
+  <button md-button md-dialog-close>Cancel</button>
+  <button md-button md-dialog-close
+          (click)="createDashboard(name.value, columns.value)"
+          id="dashboard-add-dialog-button-ok">
+    Ok
+  </button>
+</md-dialog-actions>

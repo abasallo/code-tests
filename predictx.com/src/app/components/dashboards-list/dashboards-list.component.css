@@ -1,0 +1,19 @@
+div {
+  margin-top: 15px;
+}
+
+md-list-item {
+  display: block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+md-list-item.selected {
+  background-color: lightskyblue;
+}
+
+button {
+  transform: scale(0.75);
+  margin-top: 5px;
+  float: right;
+}

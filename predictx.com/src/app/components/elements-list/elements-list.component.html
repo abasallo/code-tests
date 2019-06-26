@@ -1,0 +1,11 @@
+<div>
+
+  <md-list>
+    <md-list-item *ngFor='let element of dashboards.selected.elements' id="element-list-item">
+      {{ element.name }}
+    </md-list-item>
+  </md-list>
+
+  <button md-mini-fab (click)="openDialog()" id="element-add-button"><md-icon>add</md-icon></button>
+
+</div>

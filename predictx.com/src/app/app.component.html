@@ -1,0 +1,16 @@
+<md-toolbar color="primary">
+  <span id="toolbar-title">PI Challenge</span>
+</md-toolbar>
+
+<md-sidenav-container>
+
+  <md-sidenav mode="side" opened="true">
+    <app-dashboards-list [dashboards]="dashboards"></app-dashboards-list>
+    <app-elements-list [dashboards]="dashboards"></app-elements-list>
+  </md-sidenav>
+
+  <div class="md-sidenav-main-content">
+    <app-dashboard-show [dashboards]="dashboards"></app-dashboard-show>
+  </div>
+
+</md-sidenav-container>

@@ -1,0 +1,9 @@
+<md-grid-list [cols]="dashboards.selected.columns"
+              [gutterSize]="dashboards.selected.gutterSizePixels"
+              [rowHeight]="dashboards.selected.rowHeight">
+  <md-grid-tile *ngFor="let element of dashboards.selected.elements"
+                [colspan]="element.colSpan"
+                [rowspan]="element.rowSpan"  id="element-show-item">
+    <chart [options]="element.json"></chart>
+  </md-grid-tile>
+</md-grid-list>
