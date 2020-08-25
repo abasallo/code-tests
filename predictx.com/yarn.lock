@@ -2046,9 +2046,13 @@ heimdalljs@^0.2.0, heimdalljs@^0.2.4:
   dependencies:
     rsvp "~3.2.1"
 
-highcharts@^5.0.12, highcharts@^5.0.7:
+highcharts@^5.0.7:
   version v5.0.12
   resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-5.0.12.tgz#f73b970fe5c7f04100220b64aa7bd7fb019d11e2"
+
+highcharts@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-7.2.2.tgz#94d6bae545d7f0fbf49615b28640f5fdbf99d11e"
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
